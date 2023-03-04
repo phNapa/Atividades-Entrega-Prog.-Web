@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/phNapa/Atividades-Entrega-Prog.-Web#readme",
   "dependencies": {
+    "chalk": "^5.2.0",
     "prompt-sync": "^4.2.0"
   }
 }
