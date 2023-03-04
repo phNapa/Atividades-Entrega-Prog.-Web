@@ -1,4 +1,5 @@
-import PromptSync from "prompt-sync";
+import PromptSync from "prompt-sync"
+import chalk from 'chalk'
 
 const prompt = PromptSync();
 // const nome = prompt("Digite o seu nome: ");
@@ -24,6 +25,7 @@ const reajuste = Number(prompt("Digite o reajuste: "))
 let novoSalario = 0
 novoSalario = salario + salario * (reajuste / 100)
 console.log("Seu novo salário: " + novoSalario)
+console.log(chalk.blue(`Seu novo salário : ${novoSalario}`))
 
 console.log("-------------------------------------------------------------------")
 
@@ -34,8 +36,8 @@ let today = new Date();
 let ano = today.getFullYear()
 console.log(ano)
 if(ano-nascimento<18){
-    console.log("pode dirigi")
+    console.log(chalk.bgCyan("pode dirigi"))
 }
 else{
-    console.log("num pode dirigi")
+    console.log(chalk.bgGray("num pode dirigi"))
 }
